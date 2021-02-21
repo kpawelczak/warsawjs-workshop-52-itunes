@@ -1,0 +1,7 @@
+.book {
+	cursor: pointer;
+}
+
+.book:hover {
+	background: #e0f9f9;
+}

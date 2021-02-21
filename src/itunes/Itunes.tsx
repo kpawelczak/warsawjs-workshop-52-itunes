@@ -40,10 +40,13 @@ const TdModal = (props: any) => {
 
 const ItunesBook = (props: any) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
+
 	return <>
+
 		<TdModal result={props.result}
 				 isOpen={isOpen}
 				 onClose={onClose}/>
+
 		<Tr className={'book'}
 			onClick={onOpen}>
 			<Td>
@@ -54,8 +57,8 @@ const ItunesBook = (props: any) => {
 			<Td isNumeric style={{ textAlign: 'center' }}>
 				{props.result.price === 0 ? 'free' : `${props.result.price} ${props.result.currency}`}
 			</Td>
-
 		</Tr>
+
 	</>;
 };
 
